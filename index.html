@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Frete XYZ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #002d72;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+            padding: 10px;
+            border-bottom: 3px solid #002d72;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+        }
+
+        .banner {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner h1 {
+            font-size: 2.5em;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #002d72;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .services {
+            margin-top: 20px;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            width: 100%;
+            max-width: 25%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3 {
+            color: #002d72;
+            margin-bottom: 10px;
+        }
+
+        .about,
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact form {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .contact div {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact form button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #002d72;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .contact form button:hover {
+            background-color: #003366;
+        }
+
+        .contact div {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #002d72;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .service-container {
+                flex-direction: column;
+            }
+
+            .service {
+                width: 100%;
+            }
+
+            .contact {
+                flex-direction: column;
+            }
+
+            .contact form {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Empresa de Frete XYZ</h1>
+        <p>Seu parceiro de confiança para todas as necessidades de transporte</p>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#about">Sobre Nós</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <div class="banner">
+        <h1>Frete Rápido e Seguro</h1>
+    </div>
+
+    <div class="content">
+        <section id="home">
+            <h2>Bem-vindo à Empresa de Frete XYZ</h2>
+            <p>Na Empresa de Frete XYZ, oferecemos soluções de transporte personalizadas para atender às suas
+                necessidades específicas. Com anos de experiência no mercado, garantimos que sua carga chegará ao
+                destino com segurança e pontualidade.</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service-container">
+                <div class="service">
+                    <h3>Transporte Rodoviário</h3>
+                    <p>Serviço de transporte terrestre eficiente e seguro para qualquer tipo de carga.</p>
+                </div>
+                <div class="service">
+                    <h3>Logística Integrada</h3>
+                    <p>Soluções completas para gerenciamento e otimização da sua cadeia de suprimentos.</p>
+                </div>
+                <div class="service">
+                    <h3>Frete Internacional</h3>
+                    <p>Serviço de transporte internacional com cobertura global para sua carga.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Sobre Nós</h2>
+            <p>A Empresa de Frete XYZ foi fundada há mais de 20 anos com o objetivo de proporcionar soluções de
+                transporte seguras e eficientes para empresas de todos os tamanhos. Nossa missão é garantir que cada
+                entrega seja feita com precisão, rapidez e confiabilidade.</p>
+            <p>Com uma frota moderna e uma equipe experiente, temos orgulho em oferecer um serviço excepcional que
+                supera as expectativas dos nossos clientes. Ao longo dos anos, construímos uma reputação sólida no
+                mercado, baseada em nossa dedicação ao cliente e nossa habilidade de oferecer soluções de transporte
+                personalizadas.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <form action="#" method="post">
+                <h3>Entre em Contato</h3>
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div>
+                <h3>Nosso Endereço</h3>
+                <p>Minha Rua, 123<br>Minha Cidade, Meu Estado<br>CEP: 12345-678</p>
+                <p>Email: contato@empresadefretexyz.com.br<br>Telefone: (35) 98765-4321</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Empresa de Frete XYZ. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+    </footer>
+
+</body>
+
+</html>
